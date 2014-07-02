@@ -4,3 +4,8 @@ bmiTell weight height
   | weight / height ^ 2 <= 25.0 = "You're supposedly normal. Pffft, I bet you're ugly!"
   | weight / height ^ 2 <= 30.0 = "You're fat! Lose some weight, fatty!"
   | otherwise                   = "You're a whale, congratulations!"
+
+max' :: (Ord a) => a -> a -> a
+max' a b
+  | a > b     = a
+  | otherwise = b
